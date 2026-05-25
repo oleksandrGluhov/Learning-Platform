@@ -1,0 +1,2 @@
+ALTER TABLE tests DROP COLUMN subject_id;
+DROP TABLE IF EXISTS subjects;

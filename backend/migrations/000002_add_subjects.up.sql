@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS subjects (
+    id    SERIAL PRIMARY KEY,
+    title TEXT NOT NULL
+);
+
+ALTER TABLE tests ADD COLUMN subject_id INTEGER REFERENCES subjects(id) ON DELETE SET NULL;
